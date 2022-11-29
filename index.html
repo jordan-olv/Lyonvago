@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Lyonvago</title>
+  </head>
+  <body>
+    <div class="nav-mobile">
+      <input type="checkbox" id="active" />
+      <label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
+      <div class="nav-mob">
+        <ul>
+          <li><a href="#">Accueil</a></li>
+          <li><a href="#">Vehicule</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Accueil</a></li>
+          <li><a href="">Vehicule</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <p><i class="fa fa-user"></i> LOGIN / REGISTER</p>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="hero__form">
+        <form class="form__control">
+          <select name="" id="">
+            <option value="">Choisi ta gamme</option>
+            <option value="">Audi</option>
+            <option value="">BMW</option>
+            <option value="">Citroën</option>
+            <option value="">Renault</option>
+          </select>
+          <div class="form__date">
+            <div>
+              <label for="dep">Date Départ</label>
+              <input name="dep" type="date" placeholder="DATE DE " />
+            </div>
+            <div>
+              <label for="ret">Date de retour</label>
+              <input name="ret" type="date" />
+            </div>
+          </div>
+          <button>VOIR LES OFFRES</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="content__marque--pc">
+      <div class="content__marque--pc-box">
+        <img src="img/logo/cci.png" alt="" />
+        <img src="img/logo/blabla.png" alt="" />
+        <img src="img/logo/lyon.png" alt="" />
+        <img src="img/logo/uber.png" alt="" />
+      </div>
+    </div>
+
+    <div class="content__marque">
+      <div class="mySlides fade">
+        <img src="img/logo/cci.png" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/logo/blabla.png" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/logo/lyon.png" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/logo/uber.png" />
+      </div>
+
+      <!-- Next and previous buttons -->
+      <div class="slide-btn">
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+    </div>
+
+    <div class="content__histoire">
+      <h1>Notre Histoire</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero
+        impedit fugit illo suscipit non ducimus quasi nisi consequuntur ratione.
+        Unde id ullam error, nihil quas nulla, deserunt nobis quam consequuntur
+        quisquam voluptatum. Dignissimos voluptatibus omnis ipsam culpa ab
+        architecto corporis. Accusamus, nemo, explicabo voluptates quaerat eos
+        soluta molestiae itaque ipsum possimus assumenda vero quam pariatur
+        nostrum ea voluptate deleniti, recusandae porro culpa vitae quis autem.
+        Temporibus ducimus ex, dicta fuga aliquam enim distinctio mollitia,
+        perspiciatis architecto necessitatibus dolor pariatur facilis quae
+        voluptas vero sequi modi aperiam. Rerum corporis minus debitis tenetur
+        facilis nesciunt sed obcaecati magni cum.
+      </p>
+      <p>
+        Fuga obcaecati itaque maxime magnam molestiae magni iure sunt, quod
+        saepe iste libero! Alias repellendus, at nemo odit tempore
+        necessitatibus dicta in praesentium fugit repudiandae dolores officia
+        dolor.
+      </p>
+    </div>
+
+    <footer>
+      <div class="footer__content">
+        <div class="footer__content--social">
+          <div class="footer__social--title">Reseaux Sociaux</div>
+          <div class="footer__social--icon">1 2 3 4 5</div>
+        </div>
+        <div class="footer__content--text">
+          <ul>
+            <li>Mention</li>
+            <li>Mention</li>
+            <li>Mention</li>
+            <li>Mention</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script/app.js"></script>
+  </body>
+</html>
