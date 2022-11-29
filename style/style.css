@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
 }
@@ -8,8 +8,27 @@ body {
   width: 100%;
   background-color: rgb(40, 40, 61);
 }
-.asides{
+h1{
+    display: flex;
+    justify-content: center;
+}
+.aside_gamme{
     display: flex;
     flex-direction: row;
     width: 100%;
+}
+.gamme__item, .gamme__item>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+}
+.minv{
+    width: 80%;
+}
+.gamme__item:first-child {
+    background: red;
 }
