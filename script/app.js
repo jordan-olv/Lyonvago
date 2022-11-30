@@ -26,9 +26,14 @@ function showSlides(n) {
 }
 
 
-function showFT() {
-    document.getElementById('FT').style.display = "block";
-} 
-function showavis() {
-    document.getElementById('avis').style.display = "block";
-}
+let x = document.getElementById("FT");
+let y = document.getElementById("avis");
+
+function showFT(){
+    x.style.display = "block";
+    y.style.display = "none";
+  } 
+function showavis(){
+    x.style.display = "none";
+    y.style.display = "block";
+  } 

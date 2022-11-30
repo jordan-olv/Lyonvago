@@ -10,9 +10,6 @@ body {font-family: Verdana, sans-serif; margin:0}
 img {vertical-align: middle;}
 
  
-#FT{
-    display: none;
-}
 #avis{
     display: none;
 }
@@ -97,24 +94,20 @@ img {vertical-align: middle;}
     display: flex;
     flex-direction: column;
     text-align: center;
+    margin:5%;
 }
 
 .bouton_FT_avis{
     display: flex;
     flex-direction: row;
     width: 100%;
-}
-
-.bouton_FT_avis .bouton_FT,.bouton_FT_avis .bouton_avis{
-    width: 50%;
+    border-collapse: collapse;
 }
 
 .bouton_FT_avis button{
     background-color: var(--color-primary);
     width: 100%;
-    margin-bottom: 5%;
     border: solid black 2px;
-    border-radius: 50px;
     cursor: pointer;
 }
 
@@ -126,6 +119,7 @@ img {vertical-align: middle;}
     border: solid black 2px;
     background-color: var(--color-primary);
     border-bottom-style: hidden;
+    margin: 0 2%;
 }
 
 .FT_line{
@@ -147,12 +141,24 @@ h3{
     background-color: var(--color-primary);
     margin: 2%;
     padding: 20px;
-    border-radius: 50px;
     border: solid black 2px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 #avis span{
     font-weight: bold;
+}
+
+.avis_client{
+  display: flex;
+  align-items: center;
+}
+
+.avis_client img{
+  height: 25px;
+  width: 25px;
 }
 
 @keyframes fade {
