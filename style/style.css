@@ -1,7 +1,7 @@
 :root {
     --color-primary: #f04f4e;
     --color-btn-hover: #af3939;
-    --color-text: black;
+    --color-text: white;
 }
 
 * {box-sizing: border-box}
@@ -119,7 +119,9 @@ justify-content: center;
     flex-direction: row;
     width: 100%;
     border-collapse: collapse;
-    height: 40px;
+}
+.bouton_FT_avis a{
+  width: 50%;
 }
 
 .bouton_FT_avis button{
@@ -128,6 +130,7 @@ justify-content: center;
     border: solid black 2px;
     cursor: pointer;
     font-size: 15px;
+    height: 40px;
     font-weight: bold;
 }
 
@@ -146,6 +149,9 @@ justify-content: center;
     display: flex;
     border-bottom: solid black 2px;
     align-items: center;
+}
+.FT_line p{
+  padding-left: 5px;
 }
 
 .FT_modele_descr{
