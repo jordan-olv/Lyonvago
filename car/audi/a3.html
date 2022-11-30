@@ -9,22 +9,42 @@
 
 </head>
 <body>
-
+    <div class="nav-mobile">
+        <input type="checkbox" id="active" />
+        <label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
+        <div class="nav-mob">
+          <ul>
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">Vehicule</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Vehicule</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+          <p><i class="fa fa-user"></i> LOGIN / REGISTER</p>
+        </nav>
+      </header>
     <main>
 
-        <section>
+        <section class="slider_voiture">
             <div class="slider">
                 <div class="slideshow-container">
                     <div class="mySlides fade">
-                    <img src="../../img\audi\a3\car_audi_a3_sedan_resultat.png" style="width:100%">
+                    <img src="../../img\audi\a3\car_audi_a3_sedan_resultat.png">
                     </div>
                     
                     <div class="mySlides fade">
-                    <img src="../../img\audi\a3\car_audi_a3_sedan_resultat.png" style="width:100%">
+                    <img src="../../img\audi\a3\car_audi_a3_sedan_resultat.png">
                     </div>
                     
                     <div class="mySlides fade">
-                    <img src="../../img\audi\a3\car_audi_a3_sedan_resultat.png" style="width:100%">
+                    <img src="../../img\audi\a3\car_audi_a3_sedan_resultat.png">
                     </div>
                     
                     <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -187,6 +207,29 @@
         </section>
 
     </main>
+
+    <footer>
+        <div class="footer__content">
+          <div class="footer__content-copy">© Lyonvago 2022</div>
+          <div class="footer__content-mention">
+            <ul>
+              <li><a href="">Plan du site</a></li>
+              <span></span>
+              <li><a href="">Mentions légales</a></li>
+              <span></span>
+              <li><a href="">Politique de cookies</a></li>
+            </ul>
+          </div>
+          <div class="footer__content-soc">
+            <ul>
+              <li><i class="fa-sharp fa-brands fa-facebook"></i></li>
+              <li><i class="fa-sharp fa-brands fa-twitter"></i></li>
+              <li><i class="fa-sharp fa-brands fa-instagram"></i></li>
+            </ul>
+          </div>
+        </div>
+      </footer>
+
 
 <script src="../../script/app.js"></script>
 </body>
