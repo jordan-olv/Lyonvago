@@ -85,9 +85,28 @@ main>div>h1 {
     width: 80%;
 }
 
-.gamme__item:first-child {
-    background: red;
+.box__items:first-of-type .gamme__item:first-child {
+    background-image: url('../img/road_city_luxury.jpg');
+    background-size: cover;
+    background-position: center;
 }
+.box__items:first-of-type .gamme__item:nth-child(2) {
+    background-image: url('../img/road_nature2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.box__items:nth-of-type(2) .gamme__item:first-child {
+
+    background-image: url('../img/road_city_asia_buildings_3840x2160.jpg');
+    background-size: cover;
+    background-position: center;
+}
+    .box__items:nth-of-type(2) .gamme__item:nth-child(2) {
+
+        background-image: url('../img/road_street.jpg');
+        background-size: cover;
+        background-position: center;
+    }
 
 
 @media screen and (min-width: 768px) {
