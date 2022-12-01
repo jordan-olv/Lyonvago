@@ -268,10 +268,6 @@ main > div:first-of-type {
   cursor: pointer;
 }
 
-.gamme__item:hover {
-  filter: grayscale(100%);
-}
-
 .box__items {
   display: flex;
   flex-direction: column;
@@ -285,6 +281,8 @@ main > div:first-of-type {
   align-items: center;
   position: relative;
   width: 100%;
+  overflow: hidden;
+  padding: 1rem;
 }
 
 .gamme__item--img {
@@ -292,7 +290,7 @@ main > div:first-of-type {
   flex-direction: column;
   align-items: center;
   padding-bottom: 0.7rem;
-  z-index: 15;
+  z-index: 9;
 }
 
 .gamme__item--img img {
@@ -300,22 +298,22 @@ main > div:first-of-type {
 }
 
 /* BER */
-.box__items:first-of-type .gamme__item:nth-of-type(2) .gamme__item--img a img {
+.item_one .gamme__item--img img {
   width: 83%;
 }
 
 /* SUV */
-.box__items:first-of-type .gamme__item:nth-of-type(2) .gamme__item--img a img {
+.item_two .gamme__item--img img {
   width: 83%;
 }
 
 /* CITA */
-.box__items:nth-of-type(2) .gamme__item:nth-of-type(1) .gamme__item--img a img {
+.item_three .gamme__item--img img {
   width: 95%;
 }
 
 /* RENAULT */
-.box__items:nth-of-type(2) .gamme__item:nth-of-type(2) .gamme__item--img a img {
+.item_four .gamme__item--img img {
   width: 74%;
 }
 
@@ -324,8 +322,7 @@ main > div:first-of-type {
   justify-content: center;
   align-items: center;
   width: 100%;
-  z-index: 15;
-  /* background-color: rgba(0, 0, 0, 0.75); */
+  z-index: 9;
 }
 
 .gamme__item--type {
@@ -333,15 +330,140 @@ main > div:first-of-type {
   justify-content: center;
   align-items: center;
   width: 100%;
-  z-index: 15;
-  position: absolute;
-  bottom: 8px;
-  /* background-color: rgba(0, 0, 0, 0.75); */
+  z-index: 9;
 }
 
 .gamme__item--type a {
   text-decoration: none;
   color: white;
+}
+
+.item_one {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+/* .item_two {
+  background-image: linear-gradient(
+      rgba(103, 226, 195, 0),
+      rgba(103, 226, 195, 0.25) 100%
+    ),
+    url("../img/walp/road_nature2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.item_three {
+  background-image: linear-gradient(
+      rgba(103, 226, 195, 0),
+      rgba(103, 226, 195, 0.25) 100%
+    ),
+    url("../img/walp/road_city_asia_buildings_3840x2160.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.item_four {
+  background: linear-gradient(
+      rgba(103, 226, 195, 0),
+      rgba(103, 226, 195, 0.25) 100%
+    ),
+    url("../img/walp/road_street.jpg");
+  background-size: cover;
+  background-position: center;
+} */
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* BACKGROUND EN BEFORE */
+.item_one .bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      rgba(103, 226, 195, 0),
+      rgba(103, 226, 195, 0.45) 100%
+    ),
+    url("../img/walp/road_city_luxury.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+}
+
+.item_two .bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      rgba(103, 226, 195, 0),
+      rgba(103, 226, 195, 0.45) 100%
+    ),
+    url("../img/walp/road_nature2.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+}
+
+.item_three .bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      rgba(103, 226, 195, 0),
+      rgba(103, 226, 195, 0.45) 100%
+    ),
+    url("../img/walp/road_city_asia_buildings_3840x2160.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+}
+
+.item_four .bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      rgba(103, 226, 195, 0),
+      rgba(103, 226, 195, 0.45) 100%
+    ),
+    url("../img/walp/road_street.jpg");
+  background-size: cover;
+  background-position: center;
+  transition: all 0.5s;
+}
+
+/* BACKGROUND HOVER*/
+.item_one:hover .bg:before {
+  transform: scale(1.5);
+  filter: blur(3px) grayscale(50%);
+}
+.item_two:hover .bg:before {
+  transform: scale(1.5);
+  filter: blur(3px) grayscale(50%);
+}
+.item_three:hover .bg:before {
+  transform: scale(1.5);
+  filter: blur(3px) grayscale(50%);
+}
+.item_four:hover .bg:before {
+  transform: scale(1.5);
+  filter: blur(3px) grayscale(50%);
 }
 
 .logo {
@@ -355,46 +477,6 @@ main > div:first-of-type {
 /* .ming {
   width: 80%;
 } */
-
-.box__items:first-of-type .gamme__item:first-child {
-  background: linear-gradient(
-      rgba(103, 226, 195, 0),
-      rgba(103, 226, 195, 0.45) 100%
-    ),
-    url("../img/walp/road_city_luxury.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.box__items:first-of-type .gamme__item:nth-child(2) {
-  background-image: linear-gradient(
-      rgba(103, 226, 195, 0),
-      rgba(103, 226, 195, 0.45) 100%
-    ),
-    url("../img/walp/road_nature2.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.box__items:nth-of-type(2) .gamme__item:first-child {
-  background-image: linear-gradient(
-      rgba(103, 226, 195, 0),
-      rgba(103, 226, 195, 0.42) 100%
-    ),
-    url("../img/walp/road_city_asia_buildings_3840x2160.jpg");
-  background-size: cover;
-  background-position: center;
-}
-
-.box__items:nth-of-type(2) .gamme__item:nth-child(2) {
-  background: linear-gradient(
-      rgba(103, 226, 195, 0),
-      rgba(103, 226, 195, 0.42) 100%
-    ),
-    url("../img/walp/road_street.jpg");
-  background-size: cover;
-  background-position: center;
-}
 
 @media screen and (min-width: 768px) {
   .box__items {
