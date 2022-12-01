@@ -90,23 +90,107 @@ main>div>h1 {
     background-size: cover;
     background-position: center;
 }
+
 .box__items:first-of-type .gamme__item:nth-child(2) {
     background-image: url('../img/road_nature2.jpg');
     background-size: cover;
     background-position: center;
 }
+
 .box__items:nth-of-type(2) .gamme__item:first-child {
 
     background-image: url('../img/road_city_asia_buildings_3840x2160.jpg');
     background-size: cover;
     background-position: center;
 }
-    .box__items:nth-of-type(2) .gamme__item:nth-child(2) {
 
-        background-image: url('../img/road_street.jpg');
-        background-size: cover;
-        background-position: center;
-    }
+.box__items:nth-of-type(2) .gamme__item:nth-child(2) {
+
+    background-image: url('../img/road_street.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* ------------------Car page-------------------- */
+
+.marque {
+    display: flex;
+    justify-content: center;
+}
+
+.marque>img {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.product__item,
+.product__item>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__item {
+    width: 100%;
+}
+
+.minp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.minp>img {
+    width: 80%;
+}
+
+.product__item--detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product__item--title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__item--title>a {
+    width: 100%;
+}
+
+.product__item--title>a>h4 {
+    width: 100%;
+}
+
+.product__item--button {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -121,4 +205,8 @@ main>div>h1 {
     }
 }
 
-/* ------------------Car page-------------------- */
+@media screen and (min-width: 768px) {
+    .product_box {
+        flex-direction: row;
+    }
+}
