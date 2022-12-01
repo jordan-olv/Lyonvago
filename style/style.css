@@ -814,7 +814,9 @@ main>div>h1 {
     margin: 10px;
 }
 
-.mimg {
+.ming {
+    display: flex;
+    justify-content: ;
     width: 80%;
 }
 
