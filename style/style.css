@@ -396,7 +396,7 @@ footer {
 }
 
 .footer__content-mention ul li a:hover {
-  color: white;
+  color: var(--color-btn-hover);
   cursor: pointer;
 }
 
@@ -415,7 +415,7 @@ footer {
 }
 
 .footer__content-soc ul li i:hover {
-  color: white;
+  color: var(--color-btn-hover);
   cursor: pointer;
 }
 
@@ -584,6 +584,7 @@ footer {
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  padding-left: 2rem;
   color: white;
   border-radius: 0rem 0rem 0.45rem 0.45rem;
 }
@@ -723,6 +724,7 @@ footer {
 
   .contact--box-left-infos {
     border-radius: 0 0.45rem 0 0;
+    padding-left: 1rem;
   }
   .contact--box-left-infos > div {
     font-size: 1.2rem;
