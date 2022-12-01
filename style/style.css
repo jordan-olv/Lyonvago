@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
 
 :root {
-  --color-primary: #f04f4e;
-  --color-btn-hover: #af3939;
+  --color-primary: #67e2c3;
+  --color-btn-hover: #4bb69b;
 }
 * {
   margin: 0;
@@ -47,8 +47,15 @@ nav ul li {
   list-style-type: none;
   height: 100%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+nav ul li:first-of-type {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
 nav ul li:hover {
   background: var(--color-btn-hover);
 }
@@ -210,6 +217,8 @@ input[type="checkbox"] {
 .form__control button {
   background: var(--color-primary);
   color: white;
+  border: 1px solid transparent;
+  cursor: pointer;
 }
 
 .form__date {
@@ -540,8 +549,8 @@ footer {
 .contact--box-right input:focus,
 .contact--box-right textarea:focus {
   border-bottom: 2px solid var(--color-primary);
-  -webkit-box-shadow: 0px 15px 25px 8px rgba(240, 79, 78, 0.15);
-  box-shadow: 0px 15px 25px 8px rgba(240, 79, 78, 0.15);
+  -webkit-box-shadow: 0px 15px 25px 8px #67e2c326;
+  box-shadow: 0px 15px 25px 8px #67e2c326;
 }
 
 .contact--box-right button {
@@ -630,6 +639,18 @@ footer {
 
 .pc_card {
   display: none;
+}
+
+.btn {
+  background: var(--color-primary);
+  color: white;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background: transparent;
 }
 
 /* RESPONSIVE */
