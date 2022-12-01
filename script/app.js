@@ -2,41 +2,44 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 function currentSlide(n) {
-  showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides");
   let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
+    slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "flex";  
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex - 1].style.display = "flex";
+  dots[slideIndex - 1].className += " active";
 }
-
 
 let x = document.getElementById("FT");
 let y = document.getElementById("avis");
 
-function showFT(){
-    x.style.display = "block";
-    y.style.display = "none";
-  } 
-function showavis(){
-    x.style.display = "none";
-    y.style.display = "block";
-  } 
+function showFT() {
+  x.style.display = "block";
+  y.style.display = "none";
+}
+function showavis() {
+  x.style.display = "none";
+  y.style.display = "block";
+}
 
 /* 
 
@@ -98,3 +101,31 @@ function myFunction() {
 //   slides[slideIndex2 - 1].style.display = "block";
 //   dots[slideIndex2 - 1].className += " active";
 // }
+//SLIDER SPONSOR
+let slideIndexJo = 1;
+showSlidesJo(slideIndexJo);
+
+// Next/previous controls
+function plusSlidesJo(n) {
+  showSlidesJo((slideIndexJo += n));
+}
+
+// Thumbnail image controls
+function currentSlideJo(n) {
+  showSlidesJo((slideIndexJo = n));
+}
+
+function showSlidesJo(n) {
+  let i;
+  let slidesJo = document.getElementsByClassName("mySlidesJo");
+  if (n > slidesJo.length) {
+    slideIndexJo = 1;
+  }
+  if (n < 1) {
+    slideIndexJo = slidesJo.length;
+  }
+  for (i = 0; i < slidesJo.length; i++) {
+    slidesJo[i].style.display = "none";
+  }
+  slidesJo[slideIndexJo - 1].style.display = "block";
+}
