@@ -748,57 +748,196 @@ footer {
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-}
-main > h1 {
-  display: flex;
-  justify-content: center;
-}
-.gamme {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: center; */
-  flex-wrap: wrap;
-  width: 100%;
-}
-.gamme__item,
-.gamme__item > * {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 450px;
-}
-.gamme__item--img {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-.gamme__item--logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-}
-.gamme__item--type {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.75);
-}
-.logo {
-  display: flex;
-  height: 100px;
-}
-.mimg {
-  width: 80%;
-}
-.gamme__item:first-child {
-  background: red;
+    display: flex;
+    flex-direction: column;
 }
 
+main>div>h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.gamme {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.box__items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.gamme__item,
+.gamme__item>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gamme__item {
+    width: 100%;
+}
+
+.gamme__item--img {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gamme__item--logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.gamme__item--type {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.logo {
+    display: flex;
+    width: 25%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    margin: 10px;
+}
+
+.mimg {
+    width: 80%;
+}
+
+.box__items:first-of-type .gamme__item:first-child {
+    background-image: url('../img/walp/road_city_luxury.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.box__items:first-of-type .gamme__item:nth-child(2) {
+    background-image: url('../img/walp/road_nature2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.box__items:nth-of-type(2) .gamme__item:first-child {
+
+    background-image: url('../img/walp/road_city_asia_buildings_3840x2160.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.box__items:nth-of-type(2) .gamme__item:nth-child(2) {
+
+    background-image: url('../img/walp/road_street.jpg');
+    background-size: cover;
+    background-position: center;
+}
 /* ------------------Car page-------------------- */
+
+.marque {
+    display: flex;
+    justify-content: center;
+}
+
+.marque>img {
+    display: flex;
+    justify-content: center;
+    width: 150px;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.product-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.product__item,
+.product__item>* {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product__item {
+    width: 100%;
+}
+
+.minp {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.minp>img {
+    width: 80%;
+}
+
+.product__item--detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.product__item--title {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product__item--title>a {
+    width: 100%;
+}
+
+.product__item--title>a>h4 {
+    width: 100%;
+}
+
+.product__item--button {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+
+@media screen and (min-width: 768px) {
+    .box__items {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .box__items {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .product-box {
+        flex-direction: row;
+    }
+}
