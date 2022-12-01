@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Lyonvago</title>
+  </head>
+  <body>
+    <div class="nav-mobile">
+      <input type="checkbox" id="active" />
+      <label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
+      <div class="nav-mob">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="gammes.html">Vehicule</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <ul>
+          <li><img src="img/logo2.png" width="50px" alt="" /></li>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="gammes.html">Vehicule</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <p><i class="fa fa-user"></i> LOGIN / REGISTER</p>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="hero__form">
+        <form class="form__control">
+          <select name="" id="">
+            <option value="">Choisi ta gamme</option>
+            <option value="">Audi</option>
+            <option value="">BMW</option>
+            <option value="">Citroën</option>
+            <option value="">Renault</option>
+          </select>
+          <div class="form__date">
+            <div>
+              <label for="dep">Date Départ</label>
+              <input name="dep" type="date" placeholder="DATE DE " />
+            </div>
+            <div>
+              <label for="ret">Date de retour</label>
+              <input name="ret" type="date" />
+            </div>
+          </div>
+          <button class="btn">VOIR LES OFFRES</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="content__marque--pc">
+      <div class="content__marque--pc-box">
+        <img src="img/logo/cci.png" alt="" />
+        <img src="img/logo/blabla.png" alt="" />
+        <img src="img/logo/lyon.png" alt="" />
+        <img src="img/logo/uber.png" alt="" />
+      </div>
+    </div>
+
+    <div class="content__marque">
+      <div class="mySlidesJo fade">
+        <img src="img/logo/cci.png" />
+      </div>
+
+      <div class="mySlidesJo fade">
+        <img src="img/logo/blabla.png" />
+      </div>
+
+      <div class="mySlidesJo fade">
+        <img src="img/logo/lyon.png" />
+      </div>
+
+      <div class="mySlidesJo fade">
+        <img src="img/logo/uber.png" />
+      </div>
+
+      <div class="slide-btn">
+        <a class="prev" onclick="plusSlidesJo(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlidesJo(1)">&#10095;</a>
+      </div>
+    </div>
+    <div class="content__histoire">
+      <h1>Notre Histoire</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi vero
+        impedit fugit illo suscipit non ducimus quasi nisi consequuntur ratione.
+        Unde id ullam error, nihil quas nulla, deserunt nobis quam consequuntur
+        quisquam voluptatum. Dignissimos voluptatibus omnis ipsam culpa ab
+        architecto corporis. Accusamus, nemo, explicabo voluptates quaerat eos
+        soluta molestiae itaque ipsum possimus assumenda vero quam pariatur
+        nostrum ea voluptate deleniti, recusandae porro culpa vitae quis autem.
+        Temporibus ducimus ex, dicta fuga aliquam enim distinctio mollitia,
+        perspiciatis architecto necessitatibus dolor pariatur facilis quae
+        voluptas vero sequi modi aperiam. Rerum corporis minus debitis tenetur
+        facilis nesciunt sed obcaecati magni cum.
+      </p>
+    </div>
+
+    <div class="content__best">
+      <h2>Nos meilleurs offres</h2>
+      <div class="content__best--container">
+        <div class="content__best--box">
+          <div class="content__best--box-title">
+            <h3>Mini Citadine Paris</h3>
+          </div>
+          <div class="content__best--box-header">
+            <div class="box-header-img">
+              <img src="img/bmw/car_bmw_x2_suv.png" alt="" />
+            </div>
+            <div class="box-header-price">dès 11€ /jour</div>
+          </div>
+          <div class="content__best--box-footer">
+            <p>
+              <i class="fa-sharp fa-solid fa-circle-info"></i
+              ><span> Multirisque:</span> avec franchise
+            </p>
+            <p>
+              <i class="fa-sharp fa-solid fa-circle-info"></i
+              ><span> Contre le vol:</span> avec franchise
+            </p>
+            <p>
+              <i class="fa-sharp fa-solid fa-circle-info"></i
+              ><span> Responsabilité civile:</span> 1 120 000 €
+            </p>
+          </div>
+        </div>
+        <div class="content__best--box">
+          <div class="content__best--box-title">
+            <h3>Mini Citadine Paris</h3>
+          </div>
+          <div class="content__best--box-header">
+            <div class="box-header-img">
+              <img src="img/audi/car_audi_a3_sedan.png" alt="" />
+            </div>
+            <div class="box-header-price">dès 11€ /jour</div>
+          </div>
+          <div class="content__best--box-footer">
+            <p>
+              <i class="fa-sharp fa-solid fa-circle-info"></i>
+              <span> Multirisque:</span> avec franchise
+            </p>
+            <p>
+              <i class="fa-sharp fa-solid fa-circle-info"></i>
+              <span> Contre le vol:</span> avec franchise
+            </p>
+            <p>
+              <i class="fa-sharp fa-solid fa-circle-info"></i>
+              <span> Responsabilité civile:</span> 1 120 000 €
+            </p>
+          </div>
+        </div>
+        <div class="content__best--box">
+          <div class="content__best--box-title">
+            <h3>Mini Citadine Paris</h3>
+          </div>
+          <div class="content__best--box-header">
+            <div class="box-header-img">
+              <img src="img/renault/car_renault_megane_sedan.png" alt="" />
+            </div>
+            <div class="box-header-price">dès 11€ /jour</div>
+          </div>
+          <div class="content__best--box-footer">
+            <p><span>Multirisque:</span> avec franchise</p>
+            <p><span>Contre le vol:</span> avec franchise</p>
+            <p><span>Responsabilité civile:</span> 1 120 000 €</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer__content">
+        <div class="footer__content-copy">© Lyonvago 2022</div>
+        <div class="footer__content-mention">
+          <ul>
+            <li><a href="">Plan du site</a></li>
+            <span></span>
+            <li><a href="">Mentions légales</a></li>
+            <span></span>
+            <li><a href="">Politique de cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer__content-soc">
+          <ul>
+            <li><i class="fa-sharp fa-brands fa-facebook"></i></li>
+            <li><i class="fa-sharp fa-brands fa-twitter"></i></li>
+            <li><i class="fa-sharp fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script/app.js"></script>
+  </body>
+</html>
