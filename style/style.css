@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
 :root {
   --color-primary: #f04f4e;
   --color-btn-hover: #af3939;
@@ -12,7 +14,7 @@ html,
 body {
   height: 100%;
   background: #f1f1f1;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* NAV PC */
@@ -220,6 +222,9 @@ input[type="checkbox"] {
   width: 48%;
   color: var(--color-primary);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
 }
 
 .form__date input {
@@ -350,6 +355,7 @@ footer {
   background: var(--color-primary);
   height: 17%;
   padding: 1rem;
+  color: white;
 }
 
 .footer__content {
@@ -364,11 +370,10 @@ footer {
 
 .footer__content-copy {
   font-weight: bold;
-  color: rgb(29, 29, 29);
 }
 
 .footer__content-mention span {
-  background: rgb(29, 29, 29);
+  background: white;
   height: 15px;
   width: 1px;
 }
@@ -387,7 +392,7 @@ footer {
 
 .footer__content-mention ul li a {
   text-decoration: none;
-  color: rgb(29, 29, 29);
+  color: white;
 }
 
 .footer__content-mention ul li a:hover {
