@@ -1,74 +1,105 @@
 :root {
     --color-primary: #f04f4e;
     --color-btn-hover: #af3939;
-  }
+}
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
+
 html,
 body {
-  height: 100%;
-  width: 100%;
-  background-color: rgb(40, 40, 61);
-  color: white;
-}main{
+    height: 100%;
+    width: 100%;
+}
+
+main {
     display: flex;
     flex-direction: column;
 }
-h1{
+
+main>div>h1 {
     display: flex;
     justify-content: center;
 }
-.gamme{
+
+.gamme {
     display: flex;
     flex-direction: row;
-    /* justify-content: center; */
+    justify-content: center;
     flex-wrap: wrap;
     width: 100%;
 }
-.gamme__item, .gamme__item>* {
+
+.box__items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.gamme__item,
+.gamme__item>* {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    max-width: 450px;
 }
-.gamme__item--img{
+
+.gamme__item {
+    width: 100%;
+}
+
+.gamme__item--img {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-.gamme__item--logo{
+
+.gamme__item--logo {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.75);
 }
-.gamme__item--type{
+
+.gamme__item--type {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.75);
 }
-.logo{
+
+.logo {
     display: flex;
-    height: 100px;
+    width: 25%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+    margin: 10px;
 }
-.mimg{
+
+.mimg {
     width: 80%;
 }
+
 .gamme__item:first-child {
     background: red;
 }
 
 
+@media screen and (min-width: 768px) {
+    .box__items {
+        flex-direction: row;
+    }
+}
 
+@media screen and (min-width: 1000px) {
+    .box__items {
+        width: 50%;
+    }
+}
 
-
- /* ------------------Car page-------------------- */
-
+/* ------------------Car page-------------------- */
