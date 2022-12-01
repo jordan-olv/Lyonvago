@@ -206,7 +206,7 @@ main>div>h1 {
 }
 
 @media screen and (min-width: 768px) {
-    .product_box {
+    .product-box {
         flex-direction: row;
     }
 }
