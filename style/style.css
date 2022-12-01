@@ -47,6 +47,12 @@ nav ul li {
   list-style-type: none;
   height: 100%;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li:first-of-type {
+  margin-left: 1rem;
 }
 
 nav ul li:hover {
@@ -210,6 +216,7 @@ input[type="checkbox"] {
 .form__control button {
   background: var(--color-primary);
   color: white;
+  border: 1px solid transparent;
 }
 
 .form__date {
@@ -540,8 +547,8 @@ footer {
 .contact--box-right input:focus,
 .contact--box-right textarea:focus {
   border-bottom: 2px solid var(--color-primary);
-  -webkit-box-shadow: 0px 15px 25px 8px rgba(240, 79, 78, 0.15);
-  box-shadow: 0px 15px 25px 8px rgba(240, 79, 78, 0.15);
+  -webkit-box-shadow: 0px 15px 25px 8px #67e2c326;
+  box-shadow: 0px 15px 25px 8px #67e2c326;
 }
 
 .contact--box-right button {
@@ -637,6 +644,15 @@ footer {
   display: none;
 }
 
+.btn {
+  border: 1px solid transparent;
+}
+.btn:hover {
+  background: transparent;
+  color: var(--color-primary);
+  cursor: pointer;
+  border: 1px solid var(--color-primary);
+}
 /* RESPONSIVE */
 @media screen and (min-width: 768px) {
   header {
@@ -747,197 +763,194 @@ footer {
   }
 }
 
-main {
-    display: flex;
-    flex-direction: column;
+/* main {
+  display: flex;
+  flex-direction: column;
 }
 
-main>div>h1 {
-    display: flex;
-    justify-content: center;
+main > div > h1 {
+  display: flex;
+  justify-content: center;
 }
 
 .gamme {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .box__items {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .gamme__item,
-.gamme__item>* {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.gamme__item > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .gamme__item {
-    width: 100%;
+  width: 100%;
 }
 
 .gamme__item--img {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .gamme__item--logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .gamme__item--type {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .logo {
-    display: flex;
-    width: 25%;
-    aspect-ratio: 3/2;
-    object-fit: contain;
-    margin: 10px;
+  display: flex;
+  width: 25%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  margin: 10px;
 }
 
 .mimg {
-    width: 80%;
+  width: 80%;
 }
 
 .box__items:first-of-type .gamme__item:first-child {
-    background-image: url('../img/walp/road_city_luxury.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: url("../img/walp/road_city_luxury.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .box__items:first-of-type .gamme__item:nth-child(2) {
-    background-image: url('../img/walp/road_nature2.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: url("../img/walp/road_nature2.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .box__items:nth-of-type(2) .gamme__item:first-child {
-
-    background-image: url('../img/walp/road_city_asia_buildings_3840x2160.jpg');
-    background-size: cover;
-    background-position: center;
+  background-image: url("../img/walp/road_city_asia_buildings_3840x2160.jpg");
+  background-size: cover;
+  background-position: center;
 }
 
 .box__items:nth-of-type(2) .gamme__item:nth-child(2) {
-
-    background-image: url('../img/walp/road_street.jpg');
-    background-size: cover;
-    background-position: center;
-}
+  background-image: url("../img/walp/road_street.jpg");
+  background-size: cover;
+  background-position: center;
+} */
 /* ------------------Car page-------------------- */
 
 .marque {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.marque>img {
-    display: flex;
-    justify-content: center;
-    width: 150px;
+.marque > img {
+  display: flex;
+  justify-content: center;
+  width: 150px;
 }
 
 .product {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .product-box {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .product__item,
-.product__item>* {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+.product__item > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product__item {
-    width: 100%;
+  width: 100%;
 }
 
 .minp {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.minp>img {
-    width: 80%;
+.minp > img {
+  width: 80%;
 }
 
 .product__item--detail {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .product__item--title {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.product__item--title>a {
-    width: 100%;
+.product__item--title > a {
+  width: 100%;
 }
 
-.product__item--title>a>h4 {
-    width: 100%;
+.product__item--title > a > h4 {
+  width: 100%;
 }
 
 .product__item--button {
-    display: flex;
-    justify-content: center;
-    width: 50%;
+  display: flex;
+  justify-content: center;
+  width: 50%;
 }
 
-
 @media screen and (min-width: 768px) {
-    .box__items {
-        flex-direction: row;
-    }
+  .box__items {
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 1000px) {
-    .box__items {
-        width: 50%;
-    }
+  .box__items {
+    width: 50%;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .product-box {
-        flex-direction: row;
-    }
+  .product-box {
+    flex-direction: row;
+  }
 }
