@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Louer BMW X1</title>
-    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="stylesheet" href="../../style/stylevoiture.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -37,52 +37,57 @@
         </nav>
       </header>
     <main>
-
-        <section class="slider_voiture">
-            <div class="slider">
-                <div class="slideshow-container">
-                    <div class="mySlides fade">
-                    <img src="../../img/bmw/x1/car_bmw_x1_suv.png">
+        <div id="slider_desc">
+            <section class="slider_voiture">
+                <div class="slider">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                        <img src="../../img/bmw/x1/car_bmw_x1_suv.png">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                        <img src="../../img/bmw/x1/x1_cote.png">
+                        </div>
+                        
+                        <div class="mySlides fade">
+                        <img src="../../img/bmw/x1/x1_der.png">
+                        </div>
+                        
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+                        
                     </div>
-                    
-                    <div class="mySlides fade">
-                    <img src="../../img/bmw/x1/x1_cote.png">
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span> 
+                        <span class="dot" onclick="currentSlide(2)"></span> 
+                        <span class="dot" onclick="currentSlide(3)"></span> 
                     </div>
-                    
-                    <div class="mySlides fade">
-                    <img src="../../img/bmw/x1/x1_der.png">
+                </div>
+            </section>
+
+            <section class="desc">
+                <div class="desc_importante">
+                    <div class="nom_prix">
+                        <div class="modele">
+                            BMX X1
+                        </div>
+
+                        <div class="prix">
+                            70€/jour
+                        </div>
                     </div>
-                    
-                    <a class="prev" onclick="plusSlides(-1)">❮</a>
-                    <a class="next" onclick="plusSlides(1)">❯</a>
-                    
+                    <button>Louer</button>
                 </div>
-                <br>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span> 
-                    <span class="dot" onclick="currentSlide(2)"></span> 
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                </div>
-            </div>
-        </section>
+            </section>  
+        </div>
 
-        <section>
-            <div class="desc_importante">
-                <div class="modele">
-                    BMX X1
-                </div>
+        <div class="bouton_FT_avis">
 
-                <div class="prix">
-                    70€/jour
-                </div>
-            </div>
-            <div class="bouton_FT_avis">
+            <a href="#fichetechnique"><button onclick="showFT()">Fiche technique</button></a>
+            <a href="#avis"><button onclick="showavis()">Avis</button></a>
 
-                <a href="#fichetechnique"><button onclick="showFT()">Fiche technique</button></a>
-                <a href="#avis"><button onclick="showavis()">Avis</button></a>
-
-            </div>
-        </section>  
+        </div>
 
         <section id="fichetechnique">
             <div id="FT">
