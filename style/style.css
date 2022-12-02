@@ -830,8 +830,15 @@ main > div > h1 {
   margin: 10px;
 }
 
+<<<<<<< HEAD
 .mimg {
   width: 80%;
+=======
+.ming {
+    display: flex;
+    justify-content: ;
+    width: 80%;
+>>>>>>> gilles
 }
 
 .box__items:first-of-type .gamme__item:first-child {
