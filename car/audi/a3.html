@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Louer Audi A3</title>
+    <link rel="stylesheet" href="../../style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<style>
+main > div:first-of-type {
+  background: rgba(0, 0, 0, 0.8);
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+}
+
+main > div:first-of-type img {
+  width: 5rem;
+}
+@media screen and (max-width: 768px) {
+main > div:first-of-type {
+  background: var(--color-primary);
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+}
+
+main > div:first-of-type img {
+  width: 5rem;
+}
+}
+
+</style>
+  <body>
+    <div class="nav-mobile">
+      <input type="checkbox" id="active" />
+      <label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
+      <div class="nav-mob">
+        <ul>
+          <li><a href="../../index.html">Accueil</a></li>
+          <li><a href="../../gammes.html">Vehicule</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html"
+              ><img src="../../img/logo2.png" width="50px" alt=""
+            /></a>
+          </li>
+          <li><a href="../../index.html">Accueil</a></li>
+          <li><a href="../../gammes.html">Vehicule</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+        <p><i class="fa fa-user"></i> LOGIN / REGISTER</p>
+      </nav>
+    </header>
+    <main>
+      <div class="marque">
+        <img src="../../img/logos/logo_audi.png" alt="" />
+      </div>
+      <div id="slider_desc">
+        <section class="slider_voiture">
+          <div class="slider">
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img src="../../img/audi/a3/car_audi_a3_sedan_resultat.png" />
+              </div>
+
+              <div class="mySlides fade">
+                <img src="../../img/audi/a3/a3_cote.png" />
+              </div>
+
+              <div class="mySlides fade">
+                <img src="../../img/audi/a3/a3_der.png" />
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br />
+            <div style="text-align: center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="desc">
+          <div class="desc_importante">
+            <div class="nom_prix">
+              <div class="modele">Audi A3</div>
+
+              <div class="prix">87€/jour</div>
+            </div>
+            <button class="btn">Louer</button>
+          </div>
+        </section>
+      </div>
+
+      <div class="bouton_FT_avis">
+        <a href="#fichetechnique"
+          ><button onclick="showFT()">Fiche technique</button></a
+        >
+        <a href="#avis"><button onclick="showavis()">Avis</button></a>
+      </div>
+
+      <section id="fichetechnique">
+        <div id="FT">
+          <h3>FICHE TECHNIQUE</h3>
+          <div class="FT_tab">
+            <div class="FT_line">
+              <div class="FT_modele_descr">
+                <p>Modele</p>
+              </div>
+              <div class="FT_modele_descr_valeur">
+                <p>A3</p>
+              </div>
+            </div>
+            <div class="FT_line">
+              <div class="FT_modele_descr">
+                <p>Volume de coffre mini/maxi</p>
+              </div>
+              <div class="FT_modele_descr_valeur">
+                <p>NC / 425 l</p>
+              </div>
+            </div>
+            <div class="FT_line">
+              <div class="FT_modele_descr">
+                <p>Nombre de portes</p>
+              </div>
+              <div class="FT_modele_descr_valeur">
+                <p>4</p>
+              </div>
+            </div>
+            <div class="FT_line">
+              <div class="FT_modele_descr">
+                <p>Nombre de places assises</p>
+              </div>
+              <div class="FT_modele_descr_valeur">
+                <p>5</p>
+              </div>
+            </div>
+            <div class="FT_line">
+              <div class="FT_modele_descr">
+                <p>Motorisation</p>
+              </div>
+              <div class="FT_modele_descr_valeur">
+                <p>Diesel</p>
+              </div>
+            </div>
+            <div class="FT_line">
+              <div class="FT_modele_descr">
+                <p>Moteur</p>
+              </div>
+              <div class="FT_modele_descr_valeur">
+                <p>4 cylindres , 16 soupapes</p>
+              </div>
+            </div>
+            <div class="FT_line">
+              <div class="FT_modele_descr">
+                <p>Puissance</p>
+              </div>
+              <div class="FT_modele_descr_valeur">
+                <p>116 ch</p>
+              </div>
+            </div>
+            <div class="FT_line">
+              <div class="FT_modele_descr">
+                <p>Boîte de vitesse, Nb de rapports</p>
+              </div>
+              <div class="FT_modele_descr_valeur">
+                <p>Automatique à 7 rapports</p>
+              </div>
+            </div>
+            <div class="FT_line">
+              <div class="FT_modele_descr">
+                <p>Roues motrices</p>
+              </div>
+              <div class="FT_modele_descr_valeur">
+                <p>AV</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="avis">
+        <h3>AVIS CLIENT</h3>
+
+        <div class="avis_1">
+          <div class="avis_client">
+            <span>William :&#8239;&#8239;</span>
+            <img src="../../img/autres/299040_star_icon.svg" />
+            <img src="../../img/autres/299040_star_icon.svg" />
+            <img src="../../img/autres/299040_star_icon.svg" />
+            <img src="../../img/autres/299040_star_icon.svg" />
+            <img src="../../img/autres/211823_star_icon.svg" />
+          </div>
+          <div class="avis_text">
+            Bonjour, j'ai loué cette voiture la semaine dernière et j'ai été
+            ravi en récupérant la voiture jusqu'au moment ou j'ai trouvé un
+            cadavre dans le coffre.
+          </div>
+        </div>
+        <div class="avis_2">
+          <div class="avis_client">
+            <span>Gilles :&#8239;&#8239;</span>
+            <img src="../../img/autres/299040_star_icon.svg" />
+            <img src="../../img/autres/299040_star_icon.svg" />
+            <img src="../../img/autres/299040_star_icon.svg" />
+            <img src="../../img/autres/211823_star_icon.svg" />
+            <img src="../../img/autres/211823_star_icon.svg" />
+          </div>
+          <div class="avis_text">
+            Bonjour je fait un retour par rapport a ma location de cette
+            semaine. je suis très content de ma location mais je me demande ou
+            était mon chauffeur attitre.
+          </div>
+        </div>
+        <div class="avis_3">
+          <div class="avis_client">
+            <span>Jordan :&#8239;&#8239;</span>
+            <img src="../../img/autres/299040_star_icon.svg" />
+            <img src="../../img/autres/299040_star_icon.svg" />
+            <img src="../../img/autres/299040_star_icon.svg" />
+            <img src="../../img/autres/299040_star_icon.svg" />
+            <img src="../../img/autres/299040_star_icon.svg" />
+          </div>
+          <div class="avis_text">
+            bonsoir, très content de ma location, prix très abordable,service
+            impeccable bref le top du top !
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer__content">
+        <div class="footer__content-copy">© Lyonvago 2022</div>
+        <div class="footer__content-mention">
+          <ul>
+            <li><a href="">Plan du site</a></li>
+            <span></span>
+            <li><a href="">Mentions légales</a></li>
+            <span></span>
+            <li><a href="">Politique de cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer__content-soc">
+          <ul>
+            <li><i class="fa-sharp fa-brands fa-facebook"></i></li>
+            <li><i class="fa-sharp fa-brands fa-twitter"></i></li>
+            <li><i class="fa-sharp fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../script/app.js"></script>
+  </body>
+</html>

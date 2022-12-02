@@ -314,7 +314,7 @@ main > div:first-of-type {
 
 /* RENAULT */
 .item_four .gamme__item--img img {
-  width: 74%;
+  width: 100%;
 }
 
 .gamme__item--logo {

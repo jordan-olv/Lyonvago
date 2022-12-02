@@ -1,98 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SUV</title>
-    <link rel="stylesheet" href="..\style\style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="..\style\style_car.css" />
+    <style>
+      .product__item {
+        width: 100%;
+        border-right: 1px solid rgb(32, 32, 32);
+        background: linear-gradient(
+            rgba(103, 226, 195, 0),
+            rgba(103, 226, 195, 0.45) 100%
+          ),
+          url("../img/walp/road_nature2.jpg");
+        background-size: cover;
+        background-position: bottom;
+      }
+    </style>
+  </head>
 
-<body>
+  <body>
+    <div class="nav-mobile">
+      <input type="checkbox" id="active" />
+      <label for="active" class="menu-btn"><i class="fa fa-bars"></i></label>
+      <div class="nav-mob">
+        <ul>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../gammes.html">Vehicule</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html"
+              ><img src="../img/logo2.png" width="50px" alt=""
+            /></a>
+          </li>
+          <li><a href="../index.html">Accueil</a></li>
+          <li><a href="../gammes.html">Vehicule</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <p><i class="fa fa-user"></i> LOGIN / REGISTER</p>
+      </nav>
+    </header>
     <main>
-        <div class="marque">
-            <img src="../img\logos\logo_bmw.png" alt="">
-        </div>
-        <div class="product">
-            <div class="product-box">
-                <div class="product__item">
-                    <div class="minp">
-                        <a href="" class="minp">
-                            <img src="../img\bmw\car_bmw_x1_suv_resultat.png" alt="">
-                        </a>
-                    </div>
-                    <div class="product__item--detail">
-                        <div class="product__item--title">
-                            <a href="" class="product__item--title">
-                                <h2 class="product__item--title">X1</h2>
-                                <h4 class="product__item--title">Fiche technique</h4>
-                            </a>
-                        </div>
-                        <div class="product__item--button">
-                            <button class="product_button">Réserver</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product__item">
-                    <div class="minp">
-                        <a href="" class="minp">
-                            <img src="../img\bmw\car_bmw_x2_suv.png" alt="">
-                        </a>
-                    </div>
-                    <div class="product__item--detail">
-                        <div class="product__item--title">
-                            <a href="" class="product__item--title">
-                                <h2 class="product__item--title">X2</h2>
-                                <h4 class="product__item--title">Fiche technique</h4>
-                            </a>
-                        </div>
-                        <div class="product__item--button">
-                            <button class="product_button">Réserver</button>
-                        </div>
-                    </div>
-                </div>
+      <div class="marque">
+        <img src="../img\logos\logo_bmw.png" alt="" />
+      </div>
+      <div class="product">
+        <div class="product-box">
+          <div class="product__item">
+            <div class="minp">
+              <a href="bmw/x1.html" class="minp">
+                <img src="../img\bmw\car_bmw_x1_suv_resultat.png" alt="" />
+              </a>
             </div>
-            <div class="product-box">
-                <div class="product__item">
-                    <div class="minp">
-                        <a href="" class="minp">
-                            <img src="../img\bmw\car_bmw_x3_suv_resultat.png" alt="">
-                        </a>
-                    </div>
-                    <div class="product__item--detail">
-                        <div class="product__item--title">
-                            <a href="" class="product__item--title">
-                                <h2 class="product__item--title">X3</h2>
-                                <h4 class="product__item--title">Fiche technique</h4>
-                            </a>
-                        </div>
-                        <div class="product__item--button">
-                            <button class="product_button">Réserver</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="product__item">
-                    <div class="minp">
-                        <a href="" class="minp">
-                            <img src="../img\audi\car_audi_a5_sedan_resultat.png" alt="">
-                        </a>
-                    </div>
-                    <div class="product__item--detail">
-                        <div class="product__item--title">
-                            <a href="" class="product__item--title">
-                                <h2 class="product__item--title">TRY</h2>
-                                <h4 class="product__item--title">MichtoTrap5</h4>
-                            </a>
-                        </div>
-                        <div class="product__item--button">
-                            <button class="product_button">Réserver</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="product__item--detail">
+              <div class="product__item--title">
+                <a href="bmw/x1.html" class="product__item--title">
+                  <h2 class="product__item--title">X1</h2>
+                  <h4 class="product__item--title">Fiche technique</h4>
+                </a>
+              </div>
+              <div class="product__item--button">
+                <button class="product_button">Réserver</button>
+              </div>
             </div>
+          </div>
+          <div class="product__item">
+            <div class="minp">
+              <a href="bmw/x2.html" class="minp">
+                <img src="../img\bmw\car_bmw_x2_suv.png" alt="" />
+              </a>
+            </div>
+            <div class="product__item--detail">
+              <div class="product__item--title">
+                <a href="bmw/x2.html" class="product__item--title">
+                  <h2 class="product__item--title">X2</h2>
+                  <h4 class="product__item--title">Fiche technique</h4>
+                </a>
+              </div>
+              <div class="product__item--button">
+                <button class="product_button">Réserver</button>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="product-box">
+          <div class="product__item">
+            <div class="minp">
+              <a href="bmw/x3.html" class="minp">
+                <img src="../img\bmw\car_bmw_x3_suv_resultat.png" alt="" />
+              </a>
+            </div>
+            <div class="product__item--detail">
+              <div class="product__item--title">
+                <a href="bmw/x3.html" class="product__item--title">
+                  <h2 class="product__item--title">X3</h2>
+                  <h4 class="product__item--title">Fiche technique</h4>
+                </a>
+              </div>
+              <div class="product__item--button">
+                <button class="product_button">Réserver</button>
+              </div>
+            </div>
+          </div>
+          <div class="product__item">
+            <div class="minp">
+              <a href="audi/a5.html" class="minp">
+                <img src="../img\audi\car_audi_a5_sedan_resultat.png" alt="" />
+              </a>
+            </div>
+            <div class="product__item--detail">
+              <div class="product__item--title">
+                <a href="audi/a5.html" class="product__item--title">
+                  <h2 class="product__item--title">TRY</h2>
+                  <h4 class="product__item--title">MichtoTrap5</h4>
+                </a>
+              </div>
+              <div class="product__item--button">
+                <button class="product_button">Réserver</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-</body>
-
+    <footer>
+      <div class="footer__content">
+        <div class="footer__content-copy">© Lyonvago 2022</div>
+        <div class="footer__content-mention">
+          <ul>
+            <li><a href="">Plan du site</a></li>
+            <span></span>
+            <li><a href="">Mentions légales</a></li>
+            <span></span>
+            <li><a href="">Politique de cookies</a></li>
+          </ul>
+        </div>
+        <div class="footer__content-soc">
+          <ul>
+            <li><i class="fa-sharp fa-brands fa-facebook"></i></li>
+            <li><i class="fa-sharp fa-brands fa-twitter"></i></li>
+            <li><i class="fa-sharp fa-brands fa-instagram"></i></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script/app.js"></script>
+  </body>
 </html>

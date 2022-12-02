@@ -565,6 +565,7 @@ footer {
   background: var(--color-primary);
   color: white;
   border: 1px solid transparent;
+  border-radius: 0.45rem;
 }
 .contact--box-right button:hover {
   border: 1px solid var(--color-primary);
@@ -653,10 +654,293 @@ footer {
   cursor: pointer;
   border: 1px solid var(--color-primary);
 }
+
+/* WILLIAM */
+.mySlides {
+  display: none;
+  justify-content: center;
+}
+.slider {
+  width: 100%;
+}
+.mySlides img {
+  width: 75%;
+}
+img {
+  vertical-align: middle;
+}
+
+#avis {
+  display: none;
+}
+
+main {
+  margin-bottom: 2rem;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: rgba(103, 226, 195, 0.6);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: var(--color-btn-hover);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.mySlides img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slider_voiture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desc_importante {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+  font-size: 22px;
+  font-weight: bold;
+  align-items: center;
+  background: #202020;
+  color: white;
+}
+
+.desc_importante button {
+  width: 10rem;
+  font-size: 22px;
+  height: 40px;
+  background-color: var(--color-primary);
+  font-weight: bold;
+}
+
+.desc_importante button:hover {
+  background-color: var(--color-btn-hover);
+}
+
+.bouton_FT_avis {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-collapse: collapse;
+  gap: 2rem;
+  justify-content: center;
+  padding: 1rem;
+  background: var(--color-primary);
+}
+.bouton_FT_avis a {
+  width: 40%;
+}
+
+.desc_importante {
+  background: #2b2b2b;
+  width: 100%;
+  padding: 1rem;
+}
+
+.bouton_FT_avis button {
+  background-color: white;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  height: 40px;
+  color: #2b2b2b;
+  font-weight: bold;
+  border-radius: 0.45rem;
+}
+
+.bouton_FT_avis button:hover {
+  background-color: var(--color-btn-hover);
+}
+
+.FT_tab {
+  border: solid black 2px;
+  background-color: #dddddd;
+  border-bottom-style: hidden;
+  border-radius: 0.25rem;
+  margin: 0 2%;
+}
+
+.FT_line {
+  display: flex;
+  border-bottom: solid black 2px;
+  align-items: center;
+  padding: 0.1rem;
+}
+.FT_line p {
+  padding-left: 5px;
+}
+
+.FT_modele_descr {
+  width: 50%;
+  border-right: solid black 2px;
+}
+
+h3 {
+  margin: 2% 0;
+  text-align: center;
+}
+
+.avis_1,
+.avis_2,
+.avis_3 {
+  background-color: var(--color-primary);
+  margin: 2%;
+  padding: 20px;
+  border: solid black 2px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#avis span {
+  font-weight: bold;
+}
+
+.avis_client {
+  display: flex;
+  align-items: center;
+}
+
+.avis_client img {
+  height: 25px;
+  width: 25px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+}
+@media screen and (min-width: 768px) {
+  .desc {
+    width: 100%;
+  }
+  .desc_importante {
+    height: 100%;
+    justify-content: center;
+    gap: 50px;
+  }
+  .desc_importante button {
+    width: 12rem;
+  }
+  .bouton_FT_avis {
+    /* margin-top: 2%; */
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #slider_desc {
+    justify-content: center;
+    gap: 50px;
+  }
+}
+
 /* RESPONSIVE */
 @media screen and (min-width: 768px) {
   header {
     display: flex;
+  }
+
+  .bouton_FT_avis {
+    padding: 2rem;
+  }
+
+  .bouton_FT_avis a {
+    width: 20%;
   }
 
   .content__contact {
@@ -830,15 +1114,10 @@ main > div > h1 {
   margin: 10px;
 }
 
-<<<<<<< HEAD
-.mimg {
-  width: 80%;
-=======
 .ming {
     display: flex;
     justify-content: ;
     width: 80%;
->>>>>>> gilles
 }
 
 .box__items:first-of-type .gamme__item:first-child {
@@ -864,85 +1143,6 @@ main > div > h1 {
   background-size: cover;
   background-position: center;
 } */
-/* ------------------Car page-------------------- */
-
-.marque {
-  display: flex;
-  justify-content: center;
-}
-
-.marque > img {
-  display: flex;
-  justify-content: center;
-  width: 150px;
-}
-
-.product {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.product-box {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.product__item,
-.product__item > * {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.product__item {
-  width: 100%;
-}
-
-.minp {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.minp > img {
-  width: 80%;
-}
-
-.product__item--detail {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.product__item--title {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.product__item--title > a {
-  width: 100%;
-}
-
-.product__item--title > a > h4 {
-  width: 100%;
-}
-
-.product__item--button {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
 
 @media screen and (min-width: 768px) {
   .box__items {
@@ -953,11 +1153,5 @@ main > div > h1 {
 @media screen and (min-width: 1000px) {
   .box__items {
     width: 50%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .product-box {
-    flex-direction: row;
   }
 }

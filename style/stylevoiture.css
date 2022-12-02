@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --color-primary: #67e2c3;
+  --color-btn-hover: #4bb69b;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, sans-serif;
+  margin: 0;
+  background-color: #f1f1f1;
+}
+.mySlides {
+  display: none;
+  justify-content: center;
+}
+.slider {
+  width: 75%;
+}
+.mySlides img {
+  width: 75%;
+}
+img {
+  vertical-align: middle;
+}
+
+#avis {
+  display: none;
+}
+
+main {
+  margin-bottom: 2rem;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+  background-color: var(--color-primary);
+  border: black solid 2px;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: var(--color-btn-hover);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.mySlides img {
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.slider_voiture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.desc_importante {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  margin: 5%;
+  font-size: 22px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.desc_importante button {
+  width: 10rem;
+  font-size: 22px;
+  height: 40px;
+  background-color: var(--color-primary);
+  font-weight: bold;
+}
+
+.desc_importante button:hover {
+  background-color: var(--color-btn-hover);
+}
+
+.bouton_FT_avis {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  border-collapse: collapse;
+}
+.bouton_FT_avis a {
+  width: 50%;
+}
+
+.bouton_FT_avis button {
+  background-color: var(--color-primary);
+  width: 100%;
+  border: solid black 2px;
+  cursor: pointer;
+  font-size: 15px;
+  height: 40px;
+  font-weight: bold;
+}
+
+.bouton_FT_avis button:hover {
+  background-color: var(--color-btn-hover);
+}
+
+.FT_tab {
+  border: solid black 2px;
+  background-color: var(--color-primary);
+  border-bottom-style: hidden;
+  margin: 0 2%;
+}
+
+.FT_line {
+  display: flex;
+  border-bottom: solid black 2px;
+  align-items: center;
+}
+.FT_line p {
+  padding-left: 5px;
+}
+
+.FT_modele_descr {
+  width: 50%;
+  border-right: solid black 2px;
+}
+
+h3 {
+  margin: 2% 0;
+  text-align: center;
+}
+
+.avis_1,
+.avis_2,
+.avis_3 {
+  background-color: var(--color-primary);
+  margin: 2%;
+  padding: 20px;
+  border: solid black 2px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#avis span {
+  font-weight: bold;
+}
+
+.avis_client {
+  display: flex;
+  align-items: center;
+}
+
+.avis_client img {
+  height: 25px;
+  width: 25px;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .slider_voiture {
+    margin-top: 7.5%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .desc_importante {
+    margin: 2%;
+  }
+  .desc {
+    width: 100%;
+  }
+  .desc_importante {
+    height: 100%;
+    justify-content: center;
+    gap: 50px;
+  }
+  .desc_importante button {
+    width: 12rem;
+  }
+  .bouton_FT_avis {
+    margin-top: 2%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  #slider_desc {
+    justify-content: center;
+    gap: 50px;
+  }
+}
